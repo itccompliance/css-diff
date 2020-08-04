@@ -13,7 +13,7 @@ const parse = (css) => {
         if (dcl.type !== 'decl') {
           return
         }
-        declarations[dcl.prop] = dcl.value
+        declarations[dcl.prop] = `${dcl.value}${dcl.important ? '!important' : ''}`
       })
 
       result = merge(result, {[node.selector]: declarations})
