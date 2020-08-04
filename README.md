@@ -1,17 +1,17 @@
-# CSS Diff [![Build Status](https://img.shields.io/travis/romainberger/css-diff/master.svg?style=flat-square)](https://travis-ci.org/romainberger/css-diff)
+# CSS Diff
 
 Get the diff between two css.
 
 ## Installation
 
 ```shell
-$ npm install @romainberger/css-diff
+$ npm install @itccompliance/css-diff
 ```
 
 ## Usage
 
 ```js
-const cssDiff = require('@romainberger/css-diff')
+const cssDiff = require('@itccompliance/css-diff')
 
 const cssA = `
 body {
