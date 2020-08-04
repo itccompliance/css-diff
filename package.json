@@ -1,5 +1,5 @@
 {
-  "name": "@romainberger/css-diff",
+  "name": "@itccompliance/css-diff",
   "version": "1.0.4",
   "description": "Get the diff between two css",
   "main": "lib/index.js",
