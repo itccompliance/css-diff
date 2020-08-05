@@ -21,7 +21,7 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add lib/index.js
-        git commit -m "Build lib" -a
+        git commit -m "Build lib" -a --allow-empty
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
