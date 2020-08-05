@@ -1,6 +1,6 @@
 {
-  "name": "@romainberger/css-diff",
-  "version": "1.0.3",
+  "name": "@itccompliance/css-diff",
+  "version": "1.0.4",
   "description": "Get the diff between two css",
   "main": "lib/index.js",
   "scripts": {
@@ -30,7 +30,7 @@
     "babel-preset-stage-0": "^6.5.0",
     "babel-register": "^6.7.2",
     "chai": "^3.5.0",
-    "mocha": "^2.4.5"
+    "mocha": "^8.1.0"
   },
   "dependencies": {
     "lodash.merge": "^4.4.0",

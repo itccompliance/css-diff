@@ -13,7 +13,7 @@ const parse = (css) => {
         if (dcl.type !== 'decl') {
           return
         }
-        declarations[dcl.prop] = dcl.value
+        declarations[dcl.prop] = `${dcl.value}${dcl.important ? '!important' : ''}`
       })
 
       result = merge(result, {[node.selector]: declarations})
@@ -68,7 +68,7 @@ const cssDiff = (source, reversed) => {
 
   Object.keys(reversedObject).forEach(selector => {
     Object.keys(reversedObject[selector]).forEach(prop => {
-      if (sourceObject[selector][prop]) {
+      if (sourceObject[selector] && sourceObject[selector][prop]) {
         if (sourceObject[selector][prop] !== reversedObject[selector][prop]) {
           diff = addProp(diff, selector, prop, reversedObject[selector][prop])
         }
