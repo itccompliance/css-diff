@@ -5,7 +5,7 @@ Get the diff between two css.
 ## Installation
 
 ```shell
-$ npm install github:itccompliance/css-diff#v1.0.4
+$ npm install github:itccompliance/css-diff#master
 ```
 
 ## Usage
